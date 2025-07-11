@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "bedrock-age",
+	"version": "${version}",
+	"name": "Bedrock Age",
+	"description": "I love bedrock-age",
+	"authors": [
+		"小虾虾Shrimp"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bedrock-age/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"online.shrimp.mod.BedrockAge"
+		],
+		"fabric-datagen": [
+			"online.shrimp.mod.BedrockAgeDataGenerator"
+		],
+		"client": [
+			"online.shrimp.mod.BedrockAgeClient"
+		]
+	},
+	"mixins": [
+		"bedrock-age.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

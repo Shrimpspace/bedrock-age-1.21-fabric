@@ -1,0 +1,9 @@
+{
+  "item.bedrock-age.bedrock_ingot": "Bedrock Ingot",
+  "item.bedrock-age.bedrock_nugget": "Bedrock Nugget",
+
+  "block.bedrock-age.polished_bedrock_block": "Polished Bedrock Block",
+  "block.bedrock-age.bedrock_ore": "Bedrock Ore",
+
+  "itemGroup.bedrock_age_group": "Bedrock Age Items"
+}

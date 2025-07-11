@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bedrock",
+  "key": {
+    "#": {
+      "item": "bedrock-age:bedrock_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bedrock-age:polished_bedrock_block"
+  }
+}
