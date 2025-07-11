@@ -19,7 +19,6 @@ import online.shrimp.mod.item.ModItems;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-
 public class ModRecipesProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> BEDROCK_INGOT = List.of(ModBlocks.BEDROCK_ORE);
     public ModRecipesProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -40,13 +39,11 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion("has_beetroot", RecipeProvider.conditionsFromItem(Items.BEETROOT))
                 .offerTo(exporter, Identifier.of(BedrockAge.MOD_ID, "beetroot_to_sugar"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BEDROCK_ORE)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BEDROCK_ORE)
                 .input(ModItems.BEDROCK_NUGGET)
                 .input(Items.DEEPSLATE)
                 .criterion("has_item", RecipeProvider.conditionsFromItem(ModItems.BEDROCK_NUGGET))
                 .criterion("has_item", RecipeProvider.conditionsFromItem(Items.DEEPSLATE))
                 .offerTo(exporter, Identifier.of(BedrockAge.MOD_ID, "bedrock_ore"));
-
-
     }
 }
